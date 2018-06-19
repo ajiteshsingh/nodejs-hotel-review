@@ -1,0 +1,32 @@
+{
+  "name": "mean-app",
+  "version": "1.0.0",
+  "description": "Mean basic application development",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajiteshsingh/mean-app.git"
+  },
+  "keywords": [
+    "meanbasic"
+  ],
+  "author": "Ajitesh Singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajiteshsingh/mean-app/issues"
+  },
+  "homepage": "https://github.com/ajiteshsingh/mean-app#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "mongodb": "^3.0.10",
+    "mongoose": "^5.1.5"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  }
+}

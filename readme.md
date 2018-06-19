@@ -1,0 +1,1 @@
+This repo contains a basic mean stack application.
