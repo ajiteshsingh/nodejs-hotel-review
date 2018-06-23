@@ -33,7 +33,7 @@ var roomSchema = new mongoose.Schema({
 var hotelSchema = new mongoose.Schema({
     name : {
         type : String,
-        reqiured : true
+        required : true
     },
     stars : {
         type : Number,
@@ -50,7 +50,7 @@ var hotelSchema = new mongoose.Schema({
     location : {
         address : String,
         coordinates : {
-            type : Number,
+            type : [Number],
             index : '2dsphere'
         }
     }

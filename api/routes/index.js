@@ -5,25 +5,28 @@ var CtrlReviews = require("../controllers/reviews.controllers.js");
 
 router
 .route('/hotels')
-.get(CtrlHotels.hotelsGetAll);
+.get(CtrlHotels.hotelsGetAll)
+.post(CtrlHotels.hotelsAddOne);
 
 router
 .route('/hotels/:hotelId')
-.get(CtrlHotels.hotelsGetOne);
+.get(CtrlHotels.hotelsGetOne)
+.put(CtrlHotels.hotelsUpdateOne)
+.delete(CtrlHotels.hotelsDeleteOne);
 
-router
-.route('/hotels/new')
-.post(CtrlHotels.hotelsAddOne);
 
 
 // review routes
 
 router
 .route('/hotels/:hotelId/reviews')
-.get(CtrlReviews.reviewsGetAll);
+.get(CtrlReviews.reviewsGetAll)
+.post(CtrlReviews.reviewsAddOne);
 //
 router
 .route('/hotels/:hotelId/reviews/:reviewId')
-.get(CtrlReviews.reviewsGetOne);
+.get(CtrlReviews.reviewsGetOne)
+.put(CtrlReviews.reviewsUpdateOne)
+.delete(CtrlReviews.reviewsDeleteOne);
 
 module.exports = router;
