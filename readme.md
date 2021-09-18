@@ -1,1 +1,1 @@
-This repo contains a basic mean stack application.
+REST APIs in nodejs practice
